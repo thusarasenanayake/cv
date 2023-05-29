@@ -3,11 +3,21 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'quicksand';
-    src: url('./Quicksand-VariableFont_wght.ttf');
+  font-family: "quicksand";
+  src: url("/Quicksand-VariableFont_wght.ttf");
 }
 
 @font-face {
-    font-family: 'poppins';
-    src: url('./Poppins-Regular.ttf');
+  font-family: "poppins";
+  src: url("/Poppins-Regular.ttf");
+}
+
+@media screen
+{
+    /* .no-print{display:none;} */
+}
+
+@media print
+{
+    .no-print{display:none;}
 }
