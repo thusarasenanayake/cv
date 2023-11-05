@@ -12,12 +12,14 @@
   src: url("/Poppins-Regular.ttf");
 }
 
-@media screen
-{
-    /* .no-print{display:none;} */
+@media screen {
+  .no-page {
+    display: none;
+  }
 }
 
-@media print
-{
-    .no-print{display:none;}
+@media print {
+  .no-print {
+    display: none;
+  }
 }
