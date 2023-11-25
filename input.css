@@ -11,15 +11,3 @@
   font-family: "poppins";
   src: url("/Poppins-Regular.ttf");
 }
-
-@media screen {
-  .no-page {
-    display: none;
-  }
-}
-
-@media print {
-  .no-print {
-    display: none;
-  }
-}
