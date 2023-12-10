@@ -1,4 +1,12 @@
 ### Resources
 
 - https://devicon.dev/
-- https://ionic.io/ionicons
+- https://phosphoricons.com/
+
+
+### Todos
+
+- [] add spelling checker
+- [] linting
+- [] install tailwind classes sorting package
+- [] use nextjs fonts
