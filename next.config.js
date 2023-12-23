@@ -1,4 +1,19 @@
 /** @type {import('next').NextConfig} */
+
+const isGithubActions = process.env.GITHUB_ACTIONS || false
+
+let assetPrefix = ''
+let basePath = '/'
+
+if (isGithubActions) {
+    // trim off `<owner>/`
+    const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '')
+
+    assetPrefix = `/${repo}/`
+    basePath = `/${repo}`
+}
+
+
 const nextConfig = {
     output: 'export',
 
@@ -7,7 +22,8 @@ const nextConfig = {
      *
      * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
      */
-    basePath: "/cv",
+    basePath,
+    assetPrefix: assetPrefix,
 
 
     /**
@@ -18,6 +34,9 @@ const nextConfig = {
      */
     images: {
         unoptimized: true,
+        // loader: '',
+        // path: '',
+
     },
 }
 
