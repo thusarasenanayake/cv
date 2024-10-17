@@ -12,10 +12,10 @@ runs:
       id: cache_dependencies
       uses: actions/cache@v3
       with:
-        path: node_modules
-        key: node-modules-${{ hashFiles('pnpm-lock.yaml') }}
+        path: ~/.pnpm-store
+        key: pnpm-${{ hashFiles('pnpm-lock.yaml') }}
 
     - name: Install dependencies 🔧
       shell: bash
       if: steps.cache_dependencies.outputs.cache-hit != 'true'
-      run: npm i
+      run: pnpm install
