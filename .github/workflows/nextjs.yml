@@ -75,6 +75,11 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
+        # env: 
+        #   NEXT_PUBLIC_GTM_ID: ${{ secrets.NEXT_PUBLIC_GTM_ID }}
+        #   GITHUB_REPOSITORY_URL: ${{ secrets.GITHUB_REPOSITORY_URL }}
+        #   GITHUB_PROFILE_URL: ${{ secrets.GITHUB_PROFILE_URL }}
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
