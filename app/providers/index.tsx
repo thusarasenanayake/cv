@@ -6,9 +6,8 @@ import { GoogleTagManager } from "@next/third-parties/google";
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <>
-      {process.env.NEXT_PUBLIC_GTM_ID && (
-        <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
-      )}
+      <GoogleTagManager gtmId={"GTM-PFTVZ5DZ"} />
+
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         {children}
       </ThemeProvider>
