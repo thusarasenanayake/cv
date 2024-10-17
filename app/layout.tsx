@@ -6,11 +6,13 @@ import { Providers } from "./providers";
 const textFont = Source_Sans_3({
   weight: "400",
   variable: "--font-text",
+  subsets: ["latin"],
 });
 
 const headingFont = Roboto({
   weight: "400",
   variable: "--font-heading",
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
