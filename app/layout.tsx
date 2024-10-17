@@ -1,27 +1,35 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import { ThemeProvider } from './components/theme-provider'
+import type { Metadata } from "next";
+import { Carlito, Source_Sans_3, Roboto } from "next/font/google";
+import "./globals.css";
+import { Providers } from "./providers";
 
-// const poppins = Poppins({
-//   subsets: ['latin'],
-//   weight: ['300', '400', '500']
-// })
+const textFont = Source_Sans_3({
+  weight: "400",
+  variable: "--font-text",
+});
+
+const headingFont = Roboto({
+  weight: "400",
+  variable: "--font-heading",
+});
 
 export const metadata: Metadata = {
-  title: 'CV - Thusara Senanayake',
-  description: 'CV - Thusara Senanayake',
-}
+  title: "CV - Thusara Senanayake",
+  description: "CV - Thusara Senanayake",
+};
 
 export default function RootLayout({
   children,
-}: {
-  children: React.ReactNode
-}) {
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased bg-white dark:bg-slate-900 text-black dark:text-slate-100 container mx-auto p-4 min-h-[100dvh]`}>
-         <ThemeProvider attribute="class">{children}</ThemeProvider>
+    <html lang="en">
+      <body
+        className={`${textFont.variable} ${headingFont.variable} ${textFont.className}`}
+      >
+        <Providers>{children}</Providers>
       </body>
     </html>
-  )
+  );
 }

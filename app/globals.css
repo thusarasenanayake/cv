@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: "quicksand";
-  src: url("/cv/Quicksand-VariableFont_wght.ttf");
-}
-
-@font-face {
-  font-family: "poppins";
-  src: url("/cv/Poppins-Regular.ttf");
+ul {
+  margin-inline-start: 20px;
 }
