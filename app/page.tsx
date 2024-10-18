@@ -18,6 +18,7 @@ const techStack = [
   "MySQL",
   "AWS",
   "Bash",
+  "GIT",
 ];
 
 export default function Home() {
@@ -94,6 +95,12 @@ export default function Home() {
                 </h3>
                 <p className="text-neutral-600 dark:text-neutral-400">
                   2022, University of Colombo, Sri Lanka
+                </p>
+              </li>
+              <li>
+                <h3 className="">LNBTI Foundation Programme</h3>
+                <p className="text-neutral-600 dark:text-neutral-400">
+                  2018, Lanka Nippon BizTech Institute, Maharagama, Sri Lanka
                 </p>
               </li>
               <li>
