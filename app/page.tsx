@@ -48,8 +48,7 @@ export default function Home() {
           <br />
           dedicated to creating practical solutions that meet user needs.
         </p>
-        <br />
-        <section className="flex flex-wrap gap-x-6 gap-y-1">
+        <section className="flex flex-wrap gap-x-6 gap-y-1 mt-4">
           <a
             className="flex items-center gap-1"
             href="mailto:thusarasenanayake2@gmail.com"
