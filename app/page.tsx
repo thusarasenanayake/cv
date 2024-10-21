@@ -19,6 +19,8 @@ const techStack = [
   "AWS",
   "Bash",
   "GIT",
+  "Docker",
+  "Linux",
 ];
 
 export default function Home() {

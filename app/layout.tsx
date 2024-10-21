@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Carlito, Source_Sans_3, Roboto } from "next/font/google";
+import localFont from 'next/font/local'
 import "./globals.css";
 import { Providers } from "./providers";
 
@@ -14,6 +15,14 @@ const headingFont = Roboto({
   variable: "--font-heading",
   subsets: ["latin"],
 });
+
+// const headingFont = localFont({
+//       src: './fonts/GeistVF.woff',
+//       weight: '400',
+//       style: 'normal',
+//       variable: "--font-heading",
+
+// })
 
 export const metadata: Metadata = {
   title: "CV - Thusara Senanayake",
